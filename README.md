@@ -1,2 +1,2 @@
-# mkbd
-Mechanical Keyboards - Configurations, tools and scripts
+# Mechanical Keyboards
+Configurations, tools and scripts
