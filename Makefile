@@ -14,3 +14,5 @@ keymap-copy:
 keymap-compile:
 	qmk compile -kb ${KEYBOARD} -km ${KEYMAP_NAME}
 
+flash:
+	qmk flash -kb ${KEYBOARD} -km ${KEYMAP_NAME}
