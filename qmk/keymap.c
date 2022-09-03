@@ -42,20 +42,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------------------------------------.
    * |  `  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 |    Del    |
    * |-----------------------------------------------------------------------------------------+
-   * |        |     | Up  |     |     |     |     |     |     |     |PrtSc|ScrLk|Pause|        |
+   * |        |     | Up  |     |     |     |     |     |PrtSc|ScrLk|Pause|      |      |      |
    * |-----------------------------------------------------------------------------------------+
-   * |         |Left |Down |Right|     |     |     |     |     | Ins |Home |PgUp |             |
+   * |         |Left |Down |Right|     |     |     |     |     |Home |PgUp |     |      |      |
    * |-----------------------------------------------------------------------------------------+
-   * |           |VolUp|VolDn|VolMu|     |     |     |     |     | End |PgDn |                 |
+   * |   Shift   |VolUp|VolDn|VolMu|     |     |     |     | End |PgDn |     |      Shift      |
    * |-----------------------------------------------------------------------------------------+
    * | Ctrl  |  Alt  |  GUI  |              Space              |  Alt  |  GUI  |       | Ctrl  |
    * `-----------------------------------------------------------------------------------------'
    */
   [1] = LAYOUT_60_ansi(
     KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_DEL,
-    KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS,
-    KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_INS, KC_HOME, KC_PGUP, KC_TRNS,
-    KC_TRNS, KC_VOLU, KC_VOLD, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_END, KC_PGDN, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGUP, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_LSFT, KC_VOLU, KC_VOLD, KC_MUTE, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_END, KC_PGDN, KC_TRNS, KC_RSFT,
     KC_LCTL, KC_LALT, KC_LGUI, KC_SPC, KC_RALT, KC_RGUI, KC_TRNS, KC_RCTL
   ),
 
