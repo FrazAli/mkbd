@@ -1,4 +1,4 @@
-# Polarity Works BT60
+# Polarity Works BT60 V2 ANSI Hotswap Wireless
 
 ## Building
 
