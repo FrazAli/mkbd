@@ -5,6 +5,22 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+  behaviors {
+    // Tap Dance to change layer, tap once and hold for momentary layer, tap twice to toggle layer
+    tdl1: tap_dance_layer_1 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;  // default: 200ms
+      bindings = <&mo 1>, <&tog 1>;
+    };
+    tdl2: tap_dance_layer_2 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;  // default: 200ms
+      bindings = <&mo 2>, <&tog 2>;
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -25,7 +41,7 @@
            &kp LSHFT           &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH   &kp RSHFT
       // ┣━━━━━━━━━━━┳━━━━━━━┻━━┳━━━━┻━━━━━┳━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━━━━━┻━━━━━━┳━━┻━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┫
       // ┃ Ctrl      ┃ Gui      ┃ Alt      ┃ Space                                                      ┃ Alt      ┃ TogL2  ┃ TogL1  ┃ Ctrl      ┃
-           &kp LCTRL   &kp LGUI   &kp LALT   &kp SPACE                                                    &kp RALT   &mo 2   &mo 1   &kp RCTRL
+           &kp LCTRL   &kp LGUI   &kp LALT   &kp SPACE                                                    &kp RALT   &tdl2    &tdl1    &kp RCTRL
       // ┗━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━┻━━━━━━━━┻━━━━━━━━━━━┛
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
