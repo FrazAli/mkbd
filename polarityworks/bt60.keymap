@@ -5,21 +5,42 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+  // Macros to combine layer tap dance with RGB underglow
+  macros {
+    m_togl1: macro_rgb_tog_layer_1 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&tog 1>,
+        <&rgb_ug RGB_TOG>,
+        <&rgb_ug RGB_COLOR_HSB(128,100,100)>  // Green
+        ;
+    };
+    m_togl2: macro_rgb_tog_layer_2 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&tog 2>,
+        <&rgb_ug RGB_TOG>,
+        <&rgb_ug RGB_COLOR_HSB(0,100,100)>  // Red
+        ;
+    };
+  };
+
   behaviors {
     // Tap Dance to change layer, tap once and hold for momentary layer, tap twice to toggle layer
     tdl1: tap_dance_layer_1 {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;  // default: 200ms
-      bindings = <&mo 1>, <&tog 1>;
+      bindings = <&mo 1>, <&m_togl1>;
     };
     tdl2: tap_dance_layer_2 {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;  // default: 200ms
-      bindings = <&mo 2>, <&tog 2>;
+      bindings = <&mo 2>, <&m_togl2>;
     };
   };
+
 
   keymap {
     compatible = "zmk,keymap";
