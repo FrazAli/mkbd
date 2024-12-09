@@ -7,7 +7,7 @@
 - Commit the changes on 'bt60-ANSI' branch and push to the forked zmk-config-ckp github-repository.
 - The built firmware will be available as `firmware.zip` file from the github actions workflow on the forked zmk-config-ckp github-repository.
 
-## Flashing on Windows
+## Flashing (Works on both Windows and MacOS)
 
 ### Put keyboard in the bootloader mode
 
