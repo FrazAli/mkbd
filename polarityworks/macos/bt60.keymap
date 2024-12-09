@@ -61,8 +61,8 @@
       // ┃ Shift             ┃ Z     ┃ X     ┃ C     ┃ V     ┃ B     ┃ N     ┃ M     ┃ ,         ┃ .       ┃ /        ┃ Shift                    ┃
            &kp LSHFT           &kp Z   &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH   &kp RSHFT
       // ┣━━━━━━━━━━━┳━━━━━━━┻━━┳━━━━┻━━━━━┳━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━━━━━┻━━━━━━┳━━┻━━━━━━━┳━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━┫
-      // ┃ Ctrl      ┃ Gui      ┃ Alt      ┃ Space                                                      ┃ Alt      ┃ TogL2  ┃ TogL1  ┃ Ctrl      ┃
-           &kp LCTRL   &kp LGUI   &kp LALT   &kp SPACE                                                    &kp RALT   &tdl2    &tdl1    &kp RCTRL
+      // ┃ Ctrl      ┃ Optio    ┃ Command  ┃ Space                                                      ┃ Command  ┃ TogL2  ┃ TogL1  ┃ Ctrl      ┃
+           &kp LCTRL   &kp LALT   &kp LGUI   &kp SPACE                                                    &kp RGUI   &tdl2    &tdl1    &kp RCTRL
       // ┗━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━┻━━━━━━━━┻━━━━━━━━━━━┛
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -105,8 +105,8 @@
       // ┃                   ┃                                          ┃ B- PgUp    ┃                                                               ┃
            &trans              &trans &trans &trans &trans                &kp PG_UP    &trans &trans &trans &trans &trans &trans
       // ┣━━━━━━━━━━━┳━━━━━━━┻━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-      // ┃ Ctrl      ┃ Gue      ┃ Alt      ┃                                                                                                         ┃
-           &kp LCTRL   &kp LGUI   &kp LALT   &trans                                                           &trans    &trans   &trans   &trans
+      // ┃ Ctrl      ┃ Option   ┃ Command  ┃                                                                                                         ┃
+           &kp LCTRL   &kp LALT   &kp LGUI   &trans                                                           &trans    &trans   &trans   &trans
       // ┗━━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
