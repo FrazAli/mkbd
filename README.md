@@ -2,6 +2,8 @@
 
 Configurations, tools and scripts
 
-# 1up60hse
+# Keyboards
 
-# Polarity Works BT60 V2 ANSI Hotswap Wireless
+- **1UP Keyboards:** 1up60hse
+- **Polarity Works:** BT60 V2 ANSI Hotswap Wireless
+- **Keychron:** K9 Pro ANSI White
